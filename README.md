@@ -4,7 +4,7 @@
 
 `street2water` constructs a street-aligned synthetic pipe network, assigns population from the U.S. Army Corps of Engineers National Structure Inventory (NSI), estimates junction water demand, retrieves USGS ground elevations, and exports an EPANET-compatible `.inp` file.
 
-> **Important:** This package creates *synthetic* networks, not verified maps of buried utility infrastructure. The exported file has no automatically configured reservoirs, tanks, pumps, or other supply boundary conditions. It is not ready for hydraulic simulation without further model configuration and validation.
+> Important: This package creates *synthetic* networks, not verified maps of buried utility infrastructure. The exported file has no automatically configured reservoirs, tanks, pumps, or other supply boundary conditions. It is not ready for hydraulic simulation without further model configuration and validation.
 
 ## Requirements and installation
 
@@ -16,7 +16,7 @@ For local development, from the project directory:
 python -m pip install -e .
 ```
 
-After the public GitHub repository is created, the project can also be installed from a clone. Replace `YOUR_USERNAME` with the actual account name:
+The project can be installed from a clone. Replace `YOUR_USERNAME` with the actual account name:
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/street2water.git
