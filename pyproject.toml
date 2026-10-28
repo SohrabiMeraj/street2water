@@ -1,0 +1,62 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "street2water"
+version = "0.1.0"
+
+description = "Generate synthetic water distribution networks from OpenStreetMap streets"
+
+readme = "README.md"
+
+requires-python = ">=3.11"
+
+keywords = [
+    "water distribution",
+    "EPANET",
+    "OpenStreetMap",
+    "synthetic networks",
+    "water infrastructure",
+    "population",
+    "hydraulic modeling"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "osmnx",
+    "networkx",
+    "geopandas",
+    "shapely",
+    "numpy",
+    "pandas",
+    "scipy",
+    "requests",
+    "matplotlib"
+]
+
+[project.optional-dependencies]
+hydraulics = [
+    "wntr"
+]
+
+dev = [
+    "pytest",
+    "build",
+    "twine"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["street2water*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

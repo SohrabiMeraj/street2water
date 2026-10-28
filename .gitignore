@@ -1,0 +1,48 @@
+
+# Python environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Package build files
+build/
+dist/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Downloaded datasets and generated outputs
+data/nsi/
+data/elevation/
+outputs/
+cache/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# IDE files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*_backup.py
+*.bak
+*.tmp
+README_backup.md
