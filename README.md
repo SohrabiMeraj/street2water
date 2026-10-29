@@ -10,6 +10,12 @@
 
 Python 3.11 or newer is declared in the package metadata. The project has been tested locally with Python 3.14; other supported versions should be verified before release.
 
+For installation inside your Python environment:
+
+```bash
+pip install git+https://github.com/SohrabiMeraj/street2water.git .
+```
+
 For local development, from the project directory:
 
 ```bash
